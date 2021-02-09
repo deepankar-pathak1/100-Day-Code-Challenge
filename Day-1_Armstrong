@@ -1,0 +1,27 @@
+# Armstrong Number Code:
+
+number = int(input("Enter Number : "))
+
+digit = number
+power = len(str(number))
+sum = 0
+i = 0
+
+while (i < int(power)):
+    x = number % 10
+    sum = sum + x ** power
+    number = number // 10
+    i = i + 1
+
+if sum == digit:
+    print(f"This is Armstrong Number : {digit}")
+else:
+    print(f"This is Not Armstrong Number : {digit}")
+    
+    
+    
+    
+    *************************************
+    
+Enter Number : 153
+This is Armstrong Number : 153
