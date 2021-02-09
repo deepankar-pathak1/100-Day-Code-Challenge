@@ -1,0 +1,15 @@
+# Pattern Printing Program
+
+
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+number = int(input("Enter Number : "))
+
+for i in range(1,number+1): # Number for Rows
+    for j in range(1,i+1): # Number for columns
+        print(j,end="") # end line for printing in same line
+    print() # For next line
