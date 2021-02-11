@@ -1,0 +1,22 @@
+lower = int(input("Lower : "))
+upper = int(input("Upper : "))
+
+for i in range(lower,upper+1):
+    if i > 1:
+        for j in range(2,i):
+            if i % j == 0:
+                break
+        else:
+            print(f"Prime Number : {i}")
+            
+            -------------
+Lower : 2
+Upper : 20
+Prime Number : 2
+Prime Number : 3
+Prime Number : 5
+Prime Number : 7
+Prime Number : 11
+Prime Number : 13
+Prime Number : 17
+Prime Number : 19
