@@ -1,0 +1,12 @@
+n = int(input("Number : "))
+
+if n > 1:
+    for i in range(2,n):
+        if n % i == 0:
+            print(f"{n} Not Prime ")
+            break
+        else:
+            print(f"{n} Prime ")
+            break
+else:
+    print("Not Possible ")
