@@ -1,0 +1,30 @@
+import numpy
+import pandas
+from pandas import read_csv
+from sklearn.utils import resample
+from sklearn.metrics import accuracy_score
+from matplotlib import pyplot
+
+x = numpy.array([180,162,158,172,168,150,171,183,165,176])
+n_iterations = 1000
+n_size = int(len(x))
+
+medians = list()
+for i in range(n_iterations):
+  s = resample(x,n_samples=n_size)
+  m = numpy.median(s)
+  medians.append(m)
+
+pyplot.hist(medians)
+pyplot.show()
+
+# Confidence Intervals
+alpha = 0.95
+p = ((1.0 - alpha)/2.0) * 100
+lower = numpy.percentile(medians,p)
+
+p = (alpha + ((1.0-alpha)/2.0)) * 100
+upper = numpy.percentile(medians,p)
+print(f"Confidence Interval : {alpha*100} is Lower : {lower} and Upper : {upper}")
+
+
