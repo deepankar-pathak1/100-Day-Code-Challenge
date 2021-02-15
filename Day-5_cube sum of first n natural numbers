@@ -1,0 +1,7 @@
+n  = int(input("Number : "))
+cubes = 0
+for i in range(1,n+1):
+    x = i ** 3
+    cubes += x
+
+print(cubes)
