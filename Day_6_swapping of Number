@@ -1,0 +1,16 @@
+a = int(input("Number : "))
+b = int(input("Number 2 :"))
+
+# temp_a = a
+# temp_b = b
+# b = temp_a
+# a = temp_b
+# print(a)
+# print(b)
+
+temp = a
+a = b
+b = temp
+
+print(a)
+print(b)
