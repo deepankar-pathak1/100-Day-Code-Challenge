@@ -1,0 +1,36 @@
+num = int(input("Number of loops : "))
+
+n_list = [[0 for x in range(num)] for y in range(num)]
+
+row = 0
+col = num - 1
+count = int((num+1)/2)
+n = 1
+
+for i in range(count):
+    for j in range(row,col+1):
+        n_list[row][j] = n
+        n = n + 1
+
+    for j in range(row+1,col+1):
+        n_list[j][col] = n
+        n = n +1
+
+    for j in range(col-1,row-1,-1):
+        n_list[col][j] = n
+        n = n+1
+
+    for j in range(col-1,row,-1):
+        n_list[j][row] = n
+        n = n+1
+
+    row = row+1
+    col = col -1
+
+
+
+
+for i in range(num):
+    for j in range(num):
+        print(n_list[i][j],end="\t")
+    print()
