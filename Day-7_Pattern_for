@@ -1,0 +1,9 @@
+num = int(input("Number of Rows : "))
+
+for row in range(num):
+    for col in range(num):
+        if row + col == 2 or col - row == 2 or row - col == 2 or row + col == 6:
+            print("*", end="")
+        else:
+            print(end=" ")
+    print()
