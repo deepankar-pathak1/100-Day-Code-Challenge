@@ -1,0 +1,7 @@
+list1 = ["abc","123"]
+
+for i in list1:
+    list1.append(i)
+print(list1)
+
+# This for loop will become infinite and we dont get any output we get blank output
