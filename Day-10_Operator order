@@ -1,0 +1,15 @@
+# First and operator will execute then after this or operator will execute
+
+p = (1,10)
+q = 0
+r = []
+
+if p or q and r:
+    print("True")
+else:
+    print("False")
+    
+    
+--
+
+True
