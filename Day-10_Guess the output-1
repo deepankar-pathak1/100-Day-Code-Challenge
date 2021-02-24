@@ -1,0 +1,12 @@
+# In python everything is empty is treated as false
+# so here we have some code
+
+x = []
+if x:
+    print(x,"True")
+else:
+    print(x,"False")
+
+
+
+[] False
