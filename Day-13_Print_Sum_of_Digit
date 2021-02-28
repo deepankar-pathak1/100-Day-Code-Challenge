@@ -1,0 +1,28 @@
+num = int(input("Enter Number : "))
+sum = 0
+
+
+while num > 0:
+    digit = num % 10
+    # print(digit)
+    sum = sum + digit
+    num = num // 10
+
+print(sum)
+
+
+
+num = int(input("Enter Number : "))
+sum = 0
+length = len(str(num))
+
+for i in range(length):
+    digit = num % 10
+    sum = sum + digit
+    num = num // 10
+
+print(sum)
+
+
+Enter Number : 5253
+15
