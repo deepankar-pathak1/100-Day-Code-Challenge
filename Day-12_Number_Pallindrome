@@ -1,0 +1,17 @@
+# Pallindrome --> If a word read from first and last is same then it is called pallindrome
+
+a = int(input("Enter Word : "))
+# but there is no slice method for integer so we have to convert this integer into string
+a_string = str(a)
+rev_a = a_string[::-1]
+if a_string == rev_a:
+    print(f"It is a Pallidrome : {a}")
+else:
+    print(f"It is not a Pallindrome : {a}")
+    
+    
+    
+ Enter Word : 55632
+It is not a Pallindrome : 55632
+
+
