@@ -1,0 +1,73 @@
+# Selection sort Algo
+
+# 1) Search the list and find out the minimum value (ascending order)
+# a) we can use built in method like min()
+# b) we will take first value and comapre this value with other value , if another value
+#    is minmum then we will change the min_value and process goes on.
+
+# 2) swap the smallest number to the 0th index--> after this we have two parts in the number series
+# and they are sorted part and onothe one unsorted part because
+# --> initially 5 15 3 12 17 0
+# --> after swaping 0 15 3 12 17 5
+
+#  3) again we perform above step as we will find minimum number in sorted part by
+# comparing the number as we done above
+
+# 4) and we do this process step 3 until we get the sorted list in ascending order
+# --> 0 3 5 12 15 17 This is the final list of number in the sorted order
+
+
+# ---> same steps can be done with finding the maximum value (as here we are taking minimu value)
+# here we have list in the order of maximum to minmum number
+# --> 17 15 12 5 3 0
+
+
+# In nutshell we have
+# 1) starting from the first element search for the smallest element in the list of numbers
+# 2) swap the minimum number with first element
+# 3) take the sublist(ignored sorted part) and repeat step1 and 2 untill all the element are soretd
+
+# This code is only working when we dont have any duplicate value in list
+
+# list1 = [56,3,2,3,15,1,10] # here we have repeated value
+# print(list1)
+#
+# for i in range(len(list1)):
+#     min_val = min(list1[i:])
+#     min_ind = list1.index(min_val,i)
+#     list1[i], list1[min_ind] = list1[min_ind], list1[i]
+#
+#
+# print(list1)
+
+l1 = [10,8,100,50,9,5,9]
+print("Unsorted : ",l1)
+for i in range(len(l1)):
+    min_value = min(l1[i:])
+    min_index = l1.index(min_value,i)
+    l1[i], l1[min_index] = l1[min_index], l1[i]
+print("sorted : ",l1)
+
+
+
+Unsorted :  [10, 8, 100, 50, 9, 5, 9]
+sorted :  [5, 8, 9, 9, 10, 50, 100]
+
+
+
+-------------------------
+
+
+
+l1 = [10,8,100,50,9,5,9]
+# Some changes to sort algo is that
+# --> we are doing 6 iteration but we need only 5 iteration
+# --> and secondly we if element in list[i] is same list[min_ind] then we dont need to do swaping?
+
+print("Unsorted List", l1)
+for i in range(len(l1)):
+    min_value = min(l1[i:])
+    min_index = l1.index(min_value,i)
+    if l1[i] != l1[min_index]:
+        l1[i],l1[min_index] = l1[min_index], l1[i]
+print("Sorted List : ",l1)
