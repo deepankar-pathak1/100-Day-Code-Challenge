@@ -1,0 +1,13 @@
+# Pallindrome --> If a word read from first and last is same then it is called pallindrome
+
+a = input("Enter Word : ")
+rev_a = a[::-1]
+if a == rev_a:
+    print(f"It is a Pallidrome : {a}")
+else:
+    print(f"It is not a Pallindrome : {a}")
+    
+    
+    
+Enter Word : madam
+It is a Pallidrome : madam
