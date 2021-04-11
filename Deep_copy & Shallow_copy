@@ -1,0 +1,29 @@
+--- Deep Copy 
+Deep copy is a process in which the copying process occurs recursively.
+It means that any changes made to a copy of object do not reflect in the original object. In python, this is implemented using “deepcopy()” function.
+
+
+
+# Python code to demonstrate copy operations 
+
+  
+# importing "copy" for copy operations 
+
+import copy 
+
+  
+# initializing list 1 
+
+li1 = [1, 2, [3,5], 4] 
+
+  
+# using deepcopy to deep copy  
+
+li2 = copy.deepcopy(li1) 
+
+
+--- Shallow Copy 
+A shallow copy means constructing a new collection object and then populating it with references to the child objects found in the original
+. It means that any changes made to a copy of object do reflect in the original object. In python, this is implemented using “copy()” function.
+
+li2 = copy.copy(li1) 
