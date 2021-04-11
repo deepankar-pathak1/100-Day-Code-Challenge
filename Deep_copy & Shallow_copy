@@ -27,3 +27,4 @@ A shallow copy means constructing a new collection object and then populating it
 . It means that any changes made to a copy of object do reflect in the original object. In python, this is implemented using “copy()” function.
 
 li2 = copy.copy(li1) 
+ Ref
