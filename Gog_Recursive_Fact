@@ -1,0 +1,6 @@
+def facto(num):
+  return 1 if (num == 0 or num == 1) else num * fact(num - 1)
+
+
+num = 5 
+print(f"Fcatorial of number {num} is {fact(num)}")
