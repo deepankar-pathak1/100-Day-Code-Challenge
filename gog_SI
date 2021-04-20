@@ -1,0 +1,7 @@
+p = int(input("Principal : "))
+t = int(input("Time : "))
+r = int(input("Rate : "))
+
+si = (p*r*t)/100
+
+print(f"SI : {si}")
