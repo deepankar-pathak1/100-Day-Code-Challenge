@@ -1,0 +1,10 @@
+number = int(input("Number : "))
+
+while number > 0 :
+ 
+  fact = fact * number
+  number = number - 1
+  print(fact)
+  print(number)
+
+print(fact)
