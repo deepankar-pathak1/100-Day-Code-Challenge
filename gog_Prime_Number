@@ -1,0 +1,11 @@
+start = int(input("Number Start : "))
+end = int(input("Number End : "))
+
+for i in range(start,end+1):
+  if i > 1:
+    for j in range(2,i):
+      if (i%j == 0):
+        print(f"Not Prime NUmber {i}")
+        break
+    else:
+      print(f"Prime Number {i}")
