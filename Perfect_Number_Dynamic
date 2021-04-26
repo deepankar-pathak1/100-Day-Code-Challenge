@@ -1,0 +1,16 @@
+lower = int(input("Lowest Number : "))
+upper = int(input("Upper Number : "))
+
+j = 0 
+
+for i in range(lower,upper):
+  if lower > 0:
+    if upper % i == 0 :
+      print(f"{i} DIvisible" )
+      j = j + i
+
+if j == upper :
+  print(f"{upper} is Perfect Number")
+else:
+  print(f"Not a Perfect Number")
+    
