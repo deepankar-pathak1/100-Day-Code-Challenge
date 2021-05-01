@@ -1,0 +1,9 @@
+def reverse_string(strings):
+  reverse = " "
+  for i in strings:
+    reverse = i + reverse 
+
+  print(f"This is Reverse : {reverse}")
+
+string = input("Enter String : ")
+reverse_string(string)
