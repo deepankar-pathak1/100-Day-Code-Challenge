@@ -1,0 +1,11 @@
+lst = []
+num = int(input("How many Number : "))
+
+for i in range(num):
+  lst.append(int(input()))
+
+sum = 0 
+for j in range(len(lst)):
+  sum = sum + lst[j]
+
+print(sum)
