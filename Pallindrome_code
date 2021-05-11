@@ -1,0 +1,9 @@
+text = input("Enter String : ")
+
+if text == text[::-1]:
+  print(f"This is Pallindrome  : {text}")
+else:
+  print(f"This is Not Pallindrome : {text}")
+  
+
+  
