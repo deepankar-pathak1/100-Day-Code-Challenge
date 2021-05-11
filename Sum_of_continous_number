@@ -1,0 +1,22 @@
+num = int(input("Number : "))
+
+leng = len(str(num))
+sum = 0 
+
+i = 0 
+while i < leng:
+  nums = num % 10
+  # print(nums)
+  sum = sum + nums
+
+  num = int(num / 10)
+
+  i = i + 1
+
+print(sum)
+
+
+--<>---
+
+Number : 5263145
+26
