@@ -1,0 +1,26 @@
+def binary_sort(list1,key):
+  low = 0 
+  high = len(list1) - 1
+  Found = False
+
+  while low <= high and not Found:
+
+    mid = (low + high) // 2
+
+    if key == list1[mid]:
+      Found = True
+    elif key <= list1[mid]:
+      high = mid - 1
+    else:
+      low = mid + 1
+
+if Found == True:
+  print(f"{key} is Found ")
+else:
+  print(f"{key} is Not Found")
+
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+key = 9
+
+binary_sort(list1,key)
