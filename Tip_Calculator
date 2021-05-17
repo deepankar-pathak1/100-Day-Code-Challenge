@@ -15,3 +15,7 @@ p = round(x + z,2)
 
 
 print(f"Each Person Should Pay : {p} ")
+
+
+# For rounding Two places we can use format also
+# p = "{.2f}".format(z)
