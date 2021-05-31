@@ -1,0 +1,22 @@
+# Review: 
+# Create a function called greet(). 
+# Write 3 print statements inside the function.
+# Call the greet() function and run your code.
+def greet():
+  print("Greet 1")
+  print("Greet 2")
+  print("Greet 3")
+
+
+greet()
+
+def greet_With_Name(name):
+  print(f"Hey {name}, how are you ?")
+
+
+greet_With_Name("Deepankar")
+
+def greet(name,location):
+  print(f"Hey {name} your Loaction is {location}")
+
+greet(name = "Deepankar",location = "Jaipur")
