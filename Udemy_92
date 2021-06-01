@@ -1,0 +1,77 @@
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+#🚨 Do NOT change the code above
+
+#TODO: Write the function that will allow new countries
+#to be added to the travel_log. 👇
+
+def add_new_country(country,visits,city):
+  new_item = {}
+
+  for i in travel_log:
+    new_item["country"] = country
+    new_item["visits"] = visits
+    new_item["city"] = city
+
+  travel_log.append(new_item)
+
+# New_item = {}
+# text = input("Please enter Country Name : ")
+# city = input("PLease Enter City Name : ")
+# values = input("How many Visit ? : ")
+
+# for i in travel_log:
+#   # print(i["country"])
+#   if text in i["country"]:
+#     print("Nothing")
+#   else:
+#     New_item["country"] = text
+
+
+# for i in travel_log:
+#   # print(i["cities"])
+#   if city in i["cities"]:
+#     print("Nothing")
+#   else:
+#     New_item["cities"] = city
+
+# for i in travel_log:
+#   if values != i:
+#     New_item["visits"] = values
+
+# travel_log.append(New_item)
+
+# print(travel_log)
+
+  
+  # print(type(i["visits"]))
+  # if values == i:
+  #   print(values)
+  # else:
+  #   print("None")
+
+# print(i["country"])
+
+
+print(travel_log)
+# print(empty)
+
+
+
+
+#🚨 Do not change the code below
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+
+
+
