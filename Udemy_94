@@ -1,0 +1,54 @@
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+
+
+
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+
+from art import logo
+print(logo)
+
+data = {}
+isdata = True
+while isdata:
+  
+  def bid_checker(bider):
+    check_price = 0
+    winner = ""
+    for amount in bider:
+      price = bider[amount]
+      if price > check_price:
+        check_price = price
+        winner = amount
+    print(f"Winner is {winner} with Bidding Amount of {check_price}$ ")
+
+  name = input("Please Enter Name : ")
+  bid = int(input("Please Enter Bid Amount : $"))
+
+  quest = input("Do You want to Play Again Y or N ? :")
+
+  data[name] = bid
+
+  if quest == "Y":
+    isdata = True
+    clear()
+  elif quest == "N":
+    isdata = False
+    bid_checker(data)
+  else:
+    print("Please Enter Valid Statement :) ")
+
+print(data)
+
