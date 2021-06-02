@@ -1,0 +1,212 @@
+logo = """
+ _____________________
+|  _________________  |
+| | Pythonista   0. | |  .----------------.  .----------------.  .----------------.  .----------------. 
+| |_________________| | | .--------------. || .--------------. || .--------------. || .--------------. |
+|  ___ ___ ___   ___  | | |     ______   | || |      __      | || |   _____      | || |     ______   | |
+| | 7 | 8 | 9 | | + | | | |   .' ___  |  | || |     /  \     | || |  |_   _|     | || |   .' ___  |  | |
+| |___|___|___| |___| | | |  / .'   \_|  | || |    / /\ \    | || |    | |       | || |  / .'   \_|  | |
+| | 4 | 5 | 6 | | - | | | |  | |         | || |   / ____ \   | || |    | |   _   | || |  | |         | |
+| |___|___|___| |___| | | |  \ `.___.'\  | || | _/ /    \ \_ | || |   _| |__/ |  | || |  \ `.___.'\  | |
+| | 1 | 2 | 3 | | x | | | |   `._____.'  | || ||____|  |____|| || |  |________|  | || |   `._____.'  | |
+| |___|___|___| |___| | | |              | || |              | || |              | || |              | |
+| | . | 0 | = | | / | | | '--------------' || '--------------' || '--------------' || '--------------' |
+| |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
+|_____________________|
+"""
+
+
+
+
+from art import logo
+# print(logo)
+
+def addition(a,b):
+  return a + b
+
+def sub(a,b):
+  return a - b
+
+def Multiplicatio(a,b):
+  return a * b
+
+def Division(a,b):
+  return a / b
+
+
+operations = {
+
+"+": addition,
+"-": sub,
+"*": Multiplicatio,
+"/": Division
+
+}
+
+def calculator():
+  print(logo)
+  num1 = float(input("First Number ? : "))
+
+
+  for symbols in operations:
+    print(symbols)
+
+
+  iscal = True
+  while iscal:
+    sym = input("Please Choose operation from above : ")
+
+
+  # print(var_a)
+    num2 = float(input("Please Enter Next Number ? : "))
+    var_a = operations[sym] # for selection operations
+    answer = var_a(num1,num2)
+    print(f"{num1} {sym} {num2} = {answer}")
+
+    check = input("Wana do again ? Y or N or Start from Begining then Press START :")
+
+    if check == "Y":
+      num1 = answer
+    elif check == "START":
+      iscal = False
+      calculator()
+    elif check == "N":
+      iscal = False
+      break
+
+      print("Please select Valid Option ")
+
+
+calculator()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def add(a,b):
+#   return a+b
+# def divide(a,b):
+#   return a/b
+# def mult(a,b):
+#   return a*b
+# def sub(a,b):
+#   return a-b
+
+
+# operations = {
+
+# "+" : add,
+# "-" : sub,
+# "*" : mult,
+# "/" : divide
+
+# }
+
+# num1 = int(input("What the First Number : "))
+
+
+# for symbols in operations:
+#   print(symbols)
+# # operatin_symbols = input("Pick up an Operatin from the symbols : ")
+# # var_a = operations[operatin_symbols]
+# # num2 = int(input("What the Second Number : "))
+# # answer = var_a(num1,num2)
+
+# # print(f"Number 1 is {num1} {operatin_symbols} Number 2 is {num2} = {answer}")
+
+# # operatin_symbols = input("Pick up an Operatin from the symbols : ")
+# # num3 = int(input("What the Next Number : "))
+# # var_b = operations[operatin_symbols]
+# # second_answer = var_b(answer,num3)
+
+# # print(f"Number 1 is {answer} {operatin_symbols} Number 2 is {num3} = {second_answer}")
+
+
+# isanswer = True
+# while isanswer:
+#   operatin_symbols = input("Pick up an Operatin from the symbols : ")
+#   var_a = operations[operatin_symbols]
+#   num2 = int(input("What the Next Number : "))
+#   answer = var_a(num1,num2)
+#   print(f"Number 1 is {num1} {operatin_symbols} Number 2 is {num2} = {answer}")
+#   check = input("Print Y or N :? ")
+#   if check == "Y":
+#     num1 = answer
+#   elif check == "N":
+#     isanswer = False
+
+    
+
+
+
+
+# # def cal(first,second):
+# # #  second = int(input("What is The next Number? : "))
+# #  if operator == "+":
+# #     result = add(first,second)
+    
+# #  elif operator == "-":
+# #     result = sub(first,second)
+# #  elif operator == "*":
+# #     result = mult(first,second)
+# #  elif operator == "/":
+# #     result = add(first,second)
+
+# #  x = result
+# #  return x
+
+# #  return result
+# # cal(first,second)
+
+# # issecond = True
+# # while issecond == True:
+ 
+# #   print(cal(first,second))
+ 
+  
+# #   check = input("Do Again Y or N : " )
+# #   if check == "Y":
+# #     issecond
+    
+# #     operator = input("Choose \n+\n-\n*\n\ \n ")
+    
+# #     print(cal(x,third))
+
+    
+# #   elif check == "N":
+# #     issecond = False
+
+
+
+
