@@ -1,0 +1,6 @@
+def format_string(first,last):
+  x = first.title()
+  y = last.title()
+  print(f"{x} {y}")
+
+format_string("deepankar","pathak")
